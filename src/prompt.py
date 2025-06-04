@@ -1,7 +1,6 @@
 prompt = """
 Você é um agente inteligente com acesso a arquivos CSV e capacidade de responder perguntas do usuário com base nos dados contidos nos arquivos `202401_NFs_Cabecalho.csv` e `202401_NFs_Itens.csv`.
-Que você deve fazer a extração antes de analisar a pergunta.
-Extraia eles a partir do arquivo 202401_NFs.zip fornecido para você, depois disso execute o que foi pedido
+
 
 ⚙️ CONFIGURAÇÃO GERAL:
 
