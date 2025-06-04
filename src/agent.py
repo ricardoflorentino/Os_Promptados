@@ -6,9 +6,8 @@ import os
 import zipfile
 from langchain_experimental.agents.agent_toolkits import create_pandas_dataframe_agent, create_csv_agent
 from langchain_core.prompts import ChatPromptTemplate
-from src.prompt import prompt
+from src.prompt import prompt_improved, prompt
 import zipfile
-
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(base_dir, 'data', '202401_NFs.zip')
@@ -22,62 +21,71 @@ with zipfile.ZipFile(file_path, 'r') as zip_ref:
     with zip_ref.open('202401_NFs_Itens.csv') as Itens:
         df_itens = pd.read_csv(Itens)
 
+# DIAGNÓSTICO DOS DADOS
+print("=== DIAGNÓSTICO DOS DADOS ===")
+print(f"Shape do cabeçalho: {df_cabecalho.shape}")
+print(f"Shape dos itens: {df_itens.shape}")
+print("\nColunas do cabeçalho:")
+print(df_cabecalho.columns.tolist())
+print("\nColunas dos itens:")
+print(df_itens.columns.tolist())
+
+# Verificar se a coluna de valor existe e seu tipo
+if 'VALOR NOTA FISCAL' in df_cabecalho.columns:
+    print(f"\nTipo da coluna VALOR NOTA FISCAL: {df_cabecalho['VALOR NOTA FISCAL'].dtype}")
+    print(f"Valores nulos: {df_cabecalho['VALOR NOTA FISCAL'].isnull().sum()}")
+    print(f"Primeiros valores: {df_cabecalho['VALOR NOTA FISCAL'].head()}")
+    print(f"Soma total: R$ {df_cabecalho['VALOR NOTA FISCAL'].sum():,.2f}")
+else:
+    print("\nColuna 'VALOR NOTA FISCAL' não encontrada!")
 
 # Instância para carregar o modelo e criar a conexão com a provedora do modelo
-llm = ChatGroq(model="deepseek-r1-distill-llama-70b") # llama-3.3-70b-versatile
+llm = ChatGroq(model="deepseek-r1-distill-llama-70b")
 
+# PROMPT MELHORADO PARA ANÁLISE FINANCEIRA
+financial_prompt = ChatPromptTemplate.from_template(prompt)
 
-prompt = ChatPromptTemplate.from_template(prompt)
-
-agent_cabecalho = create_pandas_dataframe_agent(
-    llm= llm,
-    verbose=True,
-    df=df_cabecalho,
-    allow_dangerous_code=True,
-    handle_parsing_errors = True
-    # max_iterations=4096,
-)
-
-agent_itens = create_pandas_dataframe_agent(
-    llm = llm,
-    verbose=True,
-    df = df_itens,
-    allow_dangerous_code=True,
-    handle_parsing_errors=True,
-)
-
-agent = create_pandas_dataframe_agent(
-        llm=llm,
-        df=[df_cabecalho, df_itens],  # Lista de DataFrames
-        verbose=True,
-        allow_dangerous_code=True,
-        handle_parsing_errors=True,
-        
-        prefix="""
-        Você tem acesso a dois DataFrames:
-        - df[0] ou df_cabecalho: Contém dados do cabeçalho das Notas Fiscais
-        - df[1] ou df_itens: Contém dados dos itens das Notas Fiscais
-        
-        Para acessar os DataFrames use:
-        - df[0] para cabeçalho
-        - df[1] para itens
-        
-        Você pode fazer joins, merges e análises cruzadas entre eles.
-        """
-)
- 
-chain = (
-    prompt
-    | agent
-    
-)
 
 def main():
-    # print(df_itens.head())
-
-    # res = agent.invoke("Quantas notas para o COMANDO DA MARINHA")
-    print(f"VALOR DAS NOTAS AQUI: R$ {df_cabecalho['VALOR NOTA FISCAL'].sum()}")
-    res = chain.invoke("Qual é o valor total de todas as notas fiscais?")
-    # print(res)
-
+    print("\n=== TESTE DIRETO DO PANDAS ===")
+    valor_total_pandas = df_cabecalho['VALOR NOTA FISCAL'].sum()
+    print(f"Valor total (Pandas direto): R$ {valor_total_pandas:,.2f}")
+    print(f"Quantidade de registros: {len(df_cabecalho)}")
+    
+ 
+    print("\n=== TESTE COM AGENT CUSTOMIZADO ===")
+    try:
+        # Agent mais específico para esta tarefa
+        agent_cabecalho = create_pandas_dataframe_agent(
+            llm=llm,
+            df=df_cabecalho,  # Apenas um DataFrame
+            verbose=True,
+            allow_dangerous_code=True,
+            max_iterations=5,
+            agent_type="zero-shot-react-description",
+            return_intermediate_steps=False
+        )
+        chain = (
+            financial_prompt
+            | agent_cabecalho
+        )
+        
+        res_custom = chain.invoke("Me diga o maior e o menor valor das notas fiscais e retorne o resultado formatado em moeda brasileira")
+        print("Resultado agent customizado:", res_custom['output'])
+        
+    except Exception as e:
+        print(f"Erro no agent customizado: {e}")
+    
+    print("\n=== ANÁLISE COMPARATIVA ===")
+    print(f"Pandas direto: R$ {valor_total_pandas:,.2f}")
+    print(f"Registros totais: {len(df_cabecalho)}")
+    print(f"Primeiros 5 valores: {df_cabecalho['VALOR NOTA FISCAL'].head().tolist()}")
+    print(f"Últimos 5 valores: {df_cabecalho['VALOR NOTA FISCAL'].tail().tolist()}")
+    
+    # Verificar se há problema de encoding ou sampling
+    print(f"\nEstatísticas da coluna:")
+    print(f"Média: R$ {df_cabecalho['VALOR NOTA FISCAL'].mean():,.2f}")
+    print(f"Mediana: R$ {df_cabecalho['VALOR NOTA FISCAL'].median():,.2f}")
+    print(f"Mínimo: R$ {df_cabecalho['VALOR NOTA FISCAL'].min():,.2f}")
+    print(f"Máximo: R$ {df_cabecalho['VALOR NOTA FISCAL'].max():,.2f}")
 
