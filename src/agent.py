@@ -32,14 +32,7 @@ else:
     print("\nColuna 'VALOR NOTA FISCAL' não encontrada!")
 
 
-
-
 class call_ai:
-    # print("\n=== TESTE DIRETO DO PANDAS ===")
-    # valor_total_pandas = df_cabecalho['VALOR NOTA FISCAL'].sum()
-    # print(f"Valor total (Pandas direto): R$ {valor_total_pandas:,.2f}")
-    # print(f"Quantidade de registros: {len(df_cabecalho)}")
-    
     
     @staticmethod
     def decidir_agente(pergunta):
@@ -86,31 +79,4 @@ class call_ai:
         
         print(f"Resultado agent {agente_escolhido}: {final_response.content}")
         return final_response.content
-
-
-    # perguntas = [
-    #     "Qual o valor total das notas",
-    #     # "Quantos produtos diferentes existem usando a coluna NCM/SH",
-    #     # "Qual o menor e o maior valor das notas",
-    #     # "Me mostre os 5 produtos mais caros"
-    # ]
-    
-    # for pergunta in perguntas:
-    #     print(f"Pergunta escolhida: {pergunta}")
-    #     analisar(pergunta)
-    #     print("="*50)
-
-    
-    # print("\n=== ANÁLISE COMPARATIVA ===")
-    # print(f"Pandas direto: R$ {valor_total_pandas:,.2f}")
-    # print(f"Registros totais: {len(df_cabecalho)}")
-    # print(f"Primeiros 5 valores: {df_cabecalho['VALOR NOTA FISCAL'].head().tolist()}")
-    # print(f"Últimos 5 valores: {df_cabecalho['VALOR NOTA FISCAL'].tail().tolist()}")
-    
-    # # Verificar se há problema de encoding ou sampling
-    # print(f"\nEstatísticas da coluna:")
-    # print(f"Média: R$ {df_cabecalho['VALOR NOTA FISCAL'].mean():,.2f}")
-    # print(f"Mediana: R$ {df_cabecalho['VALOR NOTA FISCAL'].median():,.2f}")
-    # print(f"Mínimo: R$ {df_cabecalho['VALOR NOTA FISCAL'].min():,.2f}")
-    # print(f"Máximo: R$ {df_cabecalho['VALOR NOTA FISCAL'].max():,.2f}")
 
