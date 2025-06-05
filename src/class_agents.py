@@ -5,7 +5,7 @@ from src.dataframes import df_cabecalho, df_itens
 
 # Instância para carregar o modelo e criar a conexão com a provedora do modelo
 
-llm = ChatGroq(model="llama-3.1-8b-instant") # deepseek-r1-distill-llama-70b llama-3.1-8b-instant llama-3.3-70b-versatile
+llm = ChatGroq(model="llama-3.3-70b-versatile") # deepseek-r1-distill-llama-70b llama-3.1-8b-instant llama-3.3-70b-versatile
 # llm = ChatOpenAI(model="gpt-4-turbo", temperature=0)
 
 # Classe para configurar os agentes
