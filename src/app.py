@@ -10,16 +10,18 @@ def main():
     st.write("## **Preview dos Datasets 📚**")
 
     col1, col2 = st.columns([3, 3])  # Porcentagens relativas das larguras
+    no_key_acess_cabecalho = df_cabecalho.drop('CHAVE DE ACESSO', axis=1)
+    no_key_acess_itens = df_itens.drop('CHAVE DE ACESSO', axis=1)
   
   
 
     with col1:
         st.write("#### Cabeçalho")
-        st.write(df_cabecalho)
+        st.write(no_key_acess_cabecalho)
 
     with col2:
         st.write("#### Itens")
-        st.write(df_itens)
+        st.write(no_key_acess_itens)
 
 
     st.write("## Faça uma pergunta sobre as notas: ")
