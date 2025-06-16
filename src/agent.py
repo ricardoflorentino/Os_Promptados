@@ -5,7 +5,6 @@ from src.prompt import new_prompt
 from src.dataframes import df_cabecalho, df_itens
 from langchain_core.messages import HumanMessage
 
-
 class call_ai:
     
     @staticmethod

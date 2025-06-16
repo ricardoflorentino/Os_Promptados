@@ -34,7 +34,9 @@ langchain-core==0.3.63
 langchain-experimental==0.3.4
 langchain-groq==0.3.2
 langchain-openai==0.3.19
+langchain-openrouter==0.0.1
 langchain-text-splitters==0.3.8
+langchain-together==0.3.0
 langsmith==0.3.44
 MarkupSafe==3.0.2
 marshmallow==3.26.1
@@ -45,7 +47,7 @@ numpy==2.2.6
 openai==1.84.0
 orjson==3.10.18
 packaging==24.2
-pandas==2.2.3
+pandas==2.3.0
 pillow==11.2.1
 propcache==0.3.1
 protobuf==6.31.1
