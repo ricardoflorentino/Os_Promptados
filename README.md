@@ -10,12 +10,14 @@ Um projeto Python que utiliza agentes para processamento e análise de dados.
 ## Instalação
 
 1. Clone o repositório:
+
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/ricardoflorentino/Os_Promptados.git
 cd Os_Promptados
 ```
 
 2. Crie um ambiente virtual (recomendado):
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
@@ -24,6 +26,7 @@ source venv/bin/activate  # Linux/Mac
 ```
 
 3. Instale as dependências:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -31,6 +34,7 @@ pip install -r requirements.txt
 ## Como Executar
 
 Para executar o projeto, use o comando:
+
 ```bash
 python run.py
 ```
@@ -54,12 +58,14 @@ Os_Promptados/
 
 1. Certifique-se de que todas as dependências estão instaladas
 2. Execute o arquivo principal:
+
 ```bash
-python run.py
+streamlit run run.py
 ```
 
 ## Dependências Principais
 
+- langchain==0.3.25
 - numpy==2.2.6
 - pandas==2.2.3
 - python-dateutil==2.9.0.post0
@@ -73,4 +79,4 @@ python run.py
 2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
 3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
 4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request 
+5. Abra um Pull Request
