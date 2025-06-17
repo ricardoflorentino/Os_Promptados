@@ -1,9 +1,7 @@
 from src.class_agents import agents, llm
-from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from src.prompt import new_prompt
-from src.dataframes import df_cabecalho, df_itens
-from langchain_core.messages import HumanMessage
+
 
 class call_ai:
     
@@ -13,7 +11,7 @@ class call_ai:
         
         # Palavras-chave para cada agente
         palavras_cabecalho = ['valor total', 'nota fiscal', 'fornecedor', 'data', 'valor da nota', 'total das notas']
-        palavras_itens = ['produto', 'item', 'quantidade', 'preço unitário', 'categoria', 'descrição']
+        palavras_itens = ['produto', 'item', 'quantidade', 'preço unitário', 'categoria', 'descrição', 'itens']
         
         pergunta_lower = pergunta.lower()
         
@@ -43,11 +41,11 @@ class call_ai:
         if agente_escolhido == 'cabecalho':
             resultado = agents.agent_cabecalho.invoke(pergunta)
             final_prompt = prompt_template.format_messages(question=f"{pergunta}: Resultado: {resultado}")
-            final_response = llm.invoke(final_prompt)
+            final_response = llm.stream(final_prompt)
         else:
             resultado = agents.agent_itens.invoke(pergunta)
             final_prompt = prompt_template.format_messages(question=f"Qual o valor da nota? O valor foi {resultado}")
-            final_response = llm.invoke(final_prompt)
+            final_response = llm.stream(final_prompt)
         
-        return final_response.content
+        return final_response
 
