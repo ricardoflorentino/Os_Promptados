@@ -11,4 +11,3 @@ with zipfile.ZipFile(file_path, 'r') as zip_ref:
         df_cabecalho = pd.read_csv(Cabecalho)
     with zip_ref.open('202401_NFs_Itens.csv') as Itens:
         df_itens = pd.read_csv(Itens)
-
