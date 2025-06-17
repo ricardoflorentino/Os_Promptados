@@ -103,6 +103,7 @@ Observation: o resultado da ação
 ... (esse ciclo Thought/Action/Action Input/Observation pode se repetir várias vezes)
 Thought: agora sei a resposta final
 Final Answer: a resposta final para a pergunta original
+E sempre se atenha a esse formato, indepente da mensagem recebida
 
 Comece!
 """
