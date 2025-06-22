@@ -36,7 +36,7 @@ pip install -r requirements.txt
 Para executar o projeto, use o comando:
 
 ```bash
-python run.py
+streamlit run run.py
 ```
 
 ## Estrutura do Projeto
