@@ -31,6 +31,12 @@ source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
+## Como configurar a Open AI Key
+
+Crie um arquivo chamado .env no diretório e adicione por ex:
+
+OPENAI_API_KEY=SUA_KEY_AQUI
+
 ## Como Executar
 
 Para executar o projeto, use o comando:
