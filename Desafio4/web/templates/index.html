@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unificador de Planilhas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        input[type="file"] {
+            margin-top: 1rem;
+            border: 1px solid #ccc;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        input[type="submit"], button {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover, button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Loading UI */
+        .loading {
+            display: none;
+            margin-top: 1.5rem;
+            color: #333;
+        }
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 5px solid #e9ecef;
+            border-top-color: #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .success, .error {
+            display: none;
+            margin-top: 1rem;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+        }
+        .success { background: #e6ffed; color: #046c4e; border: 1px solid #8ce3b3; }
+        .error { background: #ffefef; color: #8a1f1f; border: 1px solid #f2a4a4; }
+        .reset-btn { margin-top: 0.75rem; background: #6c757d; }
+        .reset-btn:hover { background: #5a6268; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Unificador de Planilhas</h1>
+        <p>Clique para unificar.</p>
+        <form id="uploadForm" method="post" enctype="multipart/form-data">
+            <input id="fileInput" type="file" name="planilhas[]" multiple required>
+            <button id="submitBtn" type="submit">Enviar e Processar</button>
+        </form>
+        <div id="loading" class="loading" aria-live="polite">
+            <div class="spinner" role="status" aria-label="Carregando"></div>
+            <div>
+                Processando seus arquivos...<br>
+                Isso pode levar alguns minutos. Não feche esta página.
+            </div>
+        </div>
+        <div id="success" class="success" role="status" aria-live="polite">
+            ✅ Concluído! O download foi iniciado.
+            <div>
+                <button class="reset-btn" type="button" onclick="location.reload()">Nova execução</button>
+            </div>
+        </div>
+        <div id="error" class="error" role="alert"></div>
+    </div>
+    <script>
+        (function() {
+            const form = document.getElementById('uploadForm');
+            const fileInput = document.getElementById('fileInput');
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const success = document.getElementById('success');
+            const errorBox = document.getElementById('error');
+
+            async function handleSubmit(e) {
+                e.preventDefault();
+                if (!fileInput || !fileInput.files || fileInput.files.length === 0) return;
+
+                // UI: show loading, hide inputs
+                fileInput.style.display = 'none';
+                submitBtn.style.display = 'none';
+                loading.style.display = 'block';
+                errorBox.style.display = 'none';
+                success.style.display = 'none';
+
+                try {
+                    const resp = await fetch(form.action || window.location.pathname, {
+                        method: 'POST',
+                        body: new FormData(form)
+                    });
+
+                    if (!resp.ok) {
+                        const txt = await resp.text();
+                        throw new Error(txt || ('Erro HTTP ' + resp.status));
+                    }
+
+                    // Tenta extrair nome do arquivo do header
+                    const cd = resp.headers.get('content-disposition') || '';
+                    let filename = 'resultado.csv';
+                    const m = /filename\*=UTF-8''([^;]+)|filename="?([^";]+)"?/i.exec(cd);
+                    if (m) {
+                        filename = decodeURIComponent(m[1] || m[2] || filename);
+                    }
+
+                    const blob = await resp.blob();
+                    // Se for HTML, provavelmente não houve arquivo
+                    const type = (blob && blob.type) ? blob.type : '';
+                    if (type.includes('text/html')) {
+                        const text = await blob.text();
+                        throw new Error('Não foi possível gerar o arquivo. ');
+                    }
+
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                    URL.revokeObjectURL(url);
+
+                    // UI: show success
+                    loading.style.display = 'none';
+                    success.style.display = 'block';
+                } catch (err) {
+                    loading.style.display = 'none';
+                    errorBox.textContent = (err && err.message) ? err.message : 'Ocorreu um erro ao processar.';
+                    errorBox.style.display = 'block';
+                    // Reexibir controles para permitir nova tentativa
+                    fileInput.style.display = 'inline-block';
+                    submitBtn.style.display = 'inline-block';
+                }
+            }
+
+            if (form) {
+                form.addEventListener('submit', handleSubmit);
+            }
+        })();
+    </script>
+</body>
+</html>
