@@ -1,0 +1,51 @@
+Matrícula 25670: comunicado OK até dia 15 (2025-05-15), DIAS_UTEIS=0
+Matrícula 25707: comunicado OK até dia 15 (2025-05-09), DIAS_UTEIS=0
+Matrícula 26139: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 27226: comunicado OK após dia 15 (2025-05-29), DIAS_UTEIS=0 (proporcional)
+Matrícula 29294: comunicado OK até dia 15 (2025-05-11), DIAS_UTEIS=0
+Matrícula 30130: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 30673: comunicado OK até dia 15 (2025-05-14), DIAS_UTEIS=0
+Matrícula 31019: comunicado OK até dia 15 (2025-05-06), DIAS_UTEIS=0
+Matrícula 31314: comunicado 'NAN' ou data de demissão inválida, DIAS_UTEIS mantido (0)
+Matrícula 31394: comunicado OK após dia 15 (2025-05-16), DIAS_UTEIS=0 (proporcional)
+Matrícula 31486: comunicado OK até dia 15 (2025-05-01), DIAS_UTEIS=0
+Matrícula 31880: comunicado OK após dia 15 (2025-05-27), DIAS_UTEIS=0 (proporcional)
+Matrícula 31889: comunicado OK até dia 15 (2025-05-05), DIAS_UTEIS=0
+Matrícula 32533: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 32636: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 32946: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 33404: comunicado OK até dia 15 (2025-05-04), DIAS_UTEIS=0
+Matrícula 33417: comunicado OK até dia 15 (2025-05-05), DIAS_UTEIS=0
+Matrícula 33428: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 33482: comunicado OK até dia 15 (2025-05-04), DIAS_UTEIS=0
+Matrícula 33492: comunicado 'NAN' ou data de demissão inválida, DIAS_UTEIS mantido (0)
+Matrícula 33627: comunicado OK até dia 15 (2025-05-07), DIAS_UTEIS=0
+Matrícula 33711: comunicado OK após dia 15 (2025-05-17), DIAS_UTEIS=0 (proporcional)
+Matrícula 33835: comunicado OK após dia 15 (2025-05-17), DIAS_UTEIS=0 (proporcional)
+Matrícula 33922: comunicado OK até dia 15 (2025-05-08), DIAS_UTEIS=0
+Matrícula 33989: comunicado OK até dia 15 (2025-05-11), DIAS_UTEIS=0
+Matrícula 34179: comunicado OK até dia 15 (2025-05-04), DIAS_UTEIS=0
+Matrícula 34387: comunicado OK até dia 15 (2025-05-15), DIAS_UTEIS=0
+Matrícula 34417: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 34477: comunicado 'NAN' ou data de demissão inválida, DIAS_UTEIS mantido (0)
+Matrícula 34534: comunicado 'NAN' ou data de demissão inválida, DIAS_UTEIS mantido (10)
+Matrícula 34641: comunicado OK até dia 15 (2025-05-01), DIAS_UTEIS=0
+Matrícula 34706: comunicado OK até dia 15 (2025-05-01), DIAS_UTEIS=0
+Matrícula 34721: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 34785: comunicado OK até dia 15 (2025-05-05), DIAS_UTEIS=0
+Matrícula 34819: comunicado OK após dia 15 (2025-05-16), DIAS_UTEIS=0 (proporcional)
+Matrícula 34841: comunicado OK até dia 15 (2025-05-07), DIAS_UTEIS=0
+Matrícula 34884: comunicado OK após dia 15 (2025-05-18), DIAS_UTEIS=0 (proporcional)
+Matrícula 34924: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 34935: comunicado OK até dia 15 (2025-05-10), DIAS_UTEIS=0
+Matrícula 35161: comunicado OK até dia 15 (2025-05-05), DIAS_UTEIS=0
+Matrícula 35162: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 35270: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 35474: comunicado OK após dia 15 (2025-05-17), DIAS_UTEIS=0 (proporcional)
+Matrícula 35554: comunicado OK até dia 15 (2025-05-03), DIAS_UTEIS=0
+Matrícula 35558: comunicado OK até dia 15 (2025-05-03), DIAS_UTEIS=0
+Matrícula 35564: comunicado OK até dia 15 (2025-05-03), DIAS_UTEIS=0
+Matrícula 35569: comunicado OK até dia 15 (2025-05-03), DIAS_UTEIS=0
+Matrícula 35575: comunicado OK até dia 15 (2025-05-04), DIAS_UTEIS=0
+Matrícula 35589: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0
+Matrícula 35664: comunicado OK até dia 15 (2025-05-02), DIAS_UTEIS=0

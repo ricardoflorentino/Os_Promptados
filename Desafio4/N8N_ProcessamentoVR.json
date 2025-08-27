@@ -1,0 +1,90 @@
+{
+  "name": "ProcessamentoVR",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "038b55dc-fc6d-4253-8b24-acdf648216eb",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "704dd48b-838a-48fa-b461-f1722f6b5ef9",
+      "name": "Webhook",
+      "webhookId": "038b55dc-fc6d-4253-8b24-acdf648216eb"
+    },
+    {
+      "parameters": {
+        "url": "http://127.0.0.1:5000/validation",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "d8557e1e-144f-41f9-98d3-8ec229829451",
+      "name": "Validation"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5000/calculation",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "84e61ea1-8f92-44d9-8f8f-cdc835cbf79a",
+      "name": "Calculation"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Validation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validation": {
+      "main": [
+        [
+          {
+            "node": "Calculation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calculation": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "78079405-22fd-4f99-9137-058858a7c64d",
+  "meta": {
+    "instanceId": "682ba4bcb76e9357cd803a6619f90d47547ebed9676b9deeaca93102598b5b2a"
+  },
+  "id": "f9EqqtcHR5TWHM3h",
+  "tags": []
+}
