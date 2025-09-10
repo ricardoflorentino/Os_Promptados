@@ -6,6 +6,7 @@ import requests
 import time
 from validation import run_validation
 from calculation import calcular_dias_uteis_por_colaborador, aplicar_regra_desligamento, calcular_valor_total_vr, gerar_planilha_final
+from io import BytesIO
 
 app = Flask(__name__)
 
@@ -17,6 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_DIR = os.path.join(BASE_DIR, 'files')
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
 OUTPUT_FILENAME = os.path.join(OUTPUT_DIR, 'base_unificada.csv')
+OUTPUT_VALID_FILENAME = os.path.join(OUTPUT_DIR, 'base_unificada_validada.csv')
 
 # Ensure the output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -179,10 +181,34 @@ def index():
 
             # 2) Dispara o webhook (n8n) que irá chamar a API /calculation
             try:
-                requests.post(
-                    "http://localhost:5678/webhook/038b55dc-fc6d-4253-8b24-acdf648216eb",
-                    timeout=5
-                )
+                # Read the generated file and send it via the webhook
+                if os.path.exists(OUTPUT_FILENAME):
+                    response = requests.post(
+                        "http://localhost:5678/webhook/038b55dc-fc6d-4253-8b24-acdf648216eb",
+                        timeout=120
+                    )
+                    if response.status_code == 200:
+                        app.logger.info("Webhook chamado com sucesso.")
+                        target_prefix = 'RESULTADO_VR_MENSAL_'
+                        try:
+                            candidatos = [
+                                os.path.join(OUTPUT_DIR, f)
+                                for f in os.listdir(OUTPUT_DIR)
+                                if f.startswith(target_prefix) and f.lower().endswith('.csv')
+                            ]
+                        except FileNotFoundError:
+                            return "Arquivo não encontrado.", 404
+                        if candidatos:
+                            # pega o mais recente
+                            candidatos.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+                            result_path = candidatos[0]
+                            return send_file(result_path, as_attachment=True)
+                        else:
+                            return "Arquivo RESULTADO_VR_MENSAL_*.csv não encontrado.", 404
+                    else:
+                        app.logger.error(f"Webhook retornou status {response.status_code}")
+                else:
+                    app.logger.error("Arquivo base_unificada.csv não encontrado para envio via webhook.")
             except Exception as e:
                 app.logger.error(f"Erro ao chamar webhook: {e}")
 
@@ -221,24 +247,92 @@ def index():
 
 @app.route('/download')
 def download_file():
-    """Allows the user to download the generated CSV file."""
-    return send_file(OUTPUT_FILENAME, as_attachment=True)
+    """Allows the user to download the generated RESULTADO_VR_MENSAL_*.csv file."""
+    target_prefix = 'RESULTADO_VR_MENSAL_'
+    try:
+        candidatos = [
+            os.path.join(OUTPUT_DIR, f)
+            for f in os.listdir(OUTPUT_DIR)
+            if f.startswith(target_prefix) and f.lower().endswith('.csv')
+        ]
+    except FileNotFoundError:
+        return "Arquivo não encontrado.", 404
+    if candidatos:
+        # pega o mais recente
+        candidatos.sort(key=lambda p: os.path.getmtime(p), reverse=True)
+        result_path = candidatos[0]
+        return send_file(result_path, as_attachment=True)
+    else:
+        return "Arquivo RESULTADO_VR_MENSAL_*.csv não encontrado.", 404
 
-@app.route('/validation', methods=['GET'])
+@app.route('/validation', methods=['GET','POST'])
 def validation():
-    return run_validation(INPUT_DIR, OUTPUT_DIR)
+    """Endpoint que valida o arquivo base_unificada.csv gerado.
+
+    - POST: executa a validação no OUTPUT_FILENAME e retorna o arquivo validado para download.
+    - GET: retorna instruções simples.
+    """
+    if request.method == 'GET':
+        return "Use POST para executar validação no arquivo base_unificada.csv.", 200
+
+    # Verifica se o OUTPUT_FILENAME existe
+    if not os.path.exists(OUTPUT_FILENAME):
+        return {"status": "error", "message": "Arquivo base_unificada.csv não encontrado."}, 400
+
+    # Executa validação apontando para o OUTPUT_FILENAME
+    result = run_validation(INPUT_DIR, OUTPUT_DIR, base_csv_path=OUTPUT_FILENAME)
+    if isinstance(result, dict):
+        if result.get('success'):
+            output_path = result.get('output_path')
+            if output_path and os.path.exists(output_path):
+                return {"status": "success", "message": str(result)}, 200
+            else:
+                return {"status": "error", "message": "Validação concluída, mas arquivo de saída não foi encontrado.", "details": result.get('message')}, 500
+        else:
+            return {"status": "error", "message": result.get('message')}, 400
+    else:
+        # Compatibilidade com implementações anteriores que retornavam string
+        return {"status": "success", "message": str(result)}, 200
+
 
 @app.route('/calculation', methods=['POST'])
 def calculation():
     """
     Endpoint HTTP para calcular e adicionar o campo de dias úteis no CSV.
+    Não espera arquivo no POST; usa o arquivo presente no diretório de saída.
+
+    Prioridade de arquivos de entrada:
+    1. OUTPUT_VALID_FILENAME (base_unificada_validada.csv)
+    2. OUTPUT_FILENAME (base_unificada.csv) — fallback
+
+    NÃO retorna o arquivo final como anexo; retorna apenas um JSON com status em caso de sucesso.
     """
     try:
-        calcular_dias_uteis_por_colaborador(INPUT_DIR, OUTPUT_FILENAME)
-        aplicar_regra_desligamento(INPUT_DIR, OUTPUT_FILENAME)
-        calcular_valor_total_vr(INPUT_DIR, OUTPUT_FILENAME)
-        gerar_planilha_final(INPUT_DIR, OUTPUT_FILENAME)
-        return {"status": "success", "message": "Campo DIAS_UTEIS adicionado ao CSV."}, 200
+        # Não espera arquivo enviado via POST: escolhe arquivo no diretório de output
+        if os.path.exists(OUTPUT_VALID_FILENAME):
+            output_csv = OUTPUT_VALID_FILENAME
+            app.logger.info(f"Usando arquivo validado: {output_csv}")
+        elif os.path.exists(OUTPUT_FILENAME):
+            output_csv = OUTPUT_FILENAME
+            app.logger.warning(f"Arquivo validado não encontrado. Usando fallback: {output_csv}")
+        else:
+            app.logger.error("Nenhum arquivo de entrada encontrado para execução dos cálculos.")
+            return {"status": "error", "message": "Nenhum arquivo de entrada encontrado. Certifique-se que 'base_unificada_validada.csv' ou 'base_unificada.csv' exista em output/."}, 400
+
+        # Executa pipeline de cálculos usando o arquivo escolhido
+        app.logger.info(f"Iniciando pipeline de cálculos usando: {output_csv}")
+        calcular_dias_uteis_por_colaborador(INPUT_DIR, output_csv)
+        aplicar_regra_desligamento(INPUT_DIR, output_csv)
+        calcular_valor_total_vr(INPUT_DIR, output_csv)
+        final_path = gerar_planilha_final(INPUT_DIR, output_csv)
+
+        if final_path and os.path.exists(final_path):
+            app.logger.info(f"Processamento concluído. Arquivo final gerado em: {final_path}")
+        else:
+            app.logger.warning("Processamento concluído, mas não foi possível localizar o arquivo RESULTADO_VR_MENSAL_*.csv gerado.")
+
+        # Retorna apenas indicação de sucesso (HTTP 200) sem enviar o arquivo
+        return {"status": "success", "message": "Processamento concluído."}, 200
     except Exception as e:
         app.logger.error(f"Erro no cálculo de dias úteis: {e}", exc_info=True)
         return {"status": "error", "message": str(e)}, 500

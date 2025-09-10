@@ -5,30 +5,72 @@
       "parameters": {
         "httpMethod": "POST",
         "path": "038b55dc-fc6d-4253-8b24-acdf648216eb",
+        "responseMode": "responseNode",
         "options": {}
       },
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        0,
+        160,
         0
       ],
-      "id": "704dd48b-838a-48fa-b461-f1722f6b5ef9",
+      "id": "9dc25e3d-9d31-40a8-99fe-7ce2aba693fd",
       "name": "Webhook",
-      "webhookId": "038b55dc-fc6d-4253-8b24-acdf648216eb"
+      "webhookId": "038b55dc-fc6d-4253-8b24-acdf648216eb",
+      "alwaysOutputData": true
     },
     {
       "parameters": {
+        "promptType": "define",
+        "text": "=Ações:\n\nValidação: Chame a ferramenta Validation para verificar a integridade e conformidade dos dados.\n\nCálculo: Após a validação, chame a ferramenta Calculation para processar e calcular os valores.\n\nSaída: O arquivo será atualizado internamente com os resultados do processamento.\"",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        464,
+        0
+      ],
+      "id": "ad8b50bd-f239-48a5-b8db-b7c3e57f795c",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-4.1-mini"
+        },
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.2,
+      "position": [
+        128,
+        224
+      ],
+      "id": "a648fa36-f18f-4599-9c45-129bd83445a9",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "Lmj3WpJERWohtTa8",
+          "name": "OpenAi account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
         "url": "http://127.0.0.1:5000/validation",
         "options": {}
       },
-      "type": "n8n-nodes-base.httpRequest",
+      "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.2,
       "position": [
-        208,
-        0
+        528,
+        256
       ],
-      "id": "d8557e1e-144f-41f9-98d3-8ec229829451",
+      "id": "9cdd3511-d784-4f1f-9a6e-7191cff9e83b",
       "name": "Validation"
     },
     {
@@ -37,43 +79,106 @@
         "url": "http://127.0.0.1:5000/calculation",
         "options": {}
       },
-      "type": "n8n-nodes-base.httpRequest",
+      "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.2,
       "position": [
-        416,
+        704,
+        256
+      ],
+      "id": "a5e83aae-4e30-4c0f-8663-515b2aef2332",
+      "name": "Calculation"
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        800,
         0
       ],
-      "id": "84e61ea1-8f92-44d9-8f8f-cdc835cbf79a",
-      "name": "Calculation"
+      "id": "4cccbcd8-69bd-4e62-92df-d2389d95f646",
+      "name": "Respond to Webhook"
     }
   ],
-  "pinData": {},
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "localhost:5678",
+            "user-agent": "python-requests/2.32.3",
+            "accept-encoding": "gzip, deflate, zstd",
+            "accept": "*/*",
+            "connection": "keep-alive",
+            "content-length": "216117",
+            "content-type": "multipart/form-data; boundary=4612d848c80d5e38ce9c959de825d9dc"
+          },
+          "params": {},
+          "query": {},
+          "body": {},
+          "webhookUrl": "http://localhost:5678/webhook/038b55dc-fc6d-4253-8b24-acdf648216eb",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
   "connections": {
     "Webhook": {
       "main": [
         [
           {
-            "node": "Validation",
+            "node": "AI Agent",
             "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]
       ]
     },
     "Validation": {
-      "main": [
+      "ai_tool": [
         [
           {
-            "node": "Calculation",
-            "type": "main",
+            "node": "AI Agent",
+            "type": "ai_tool",
             "index": 0
           }
         ]
       ]
     },
     "Calculation": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
       "main": [
-        []
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     }
   },
@@ -81,10 +186,11 @@
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "78079405-22fd-4f99-9137-058858a7c64d",
+  "versionId": "f9e45ce1-6cc2-4852-bd3a-20fa510b5016",
   "meta": {
+    "templateCredsSetupCompleted": true,
     "instanceId": "682ba4bcb76e9357cd803a6619f90d47547ebed9676b9deeaca93102598b5b2a"
   },
-  "id": "f9EqqtcHR5TWHM3h",
+  "id": "Fawa8u0YSk6gTw6R",
   "tags": []
 }

@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from flask import current_app as app
 
-def run_validation(INPUT_DIR, OUTPUT_DIR):
+def run_validation(INPUT_DIR, OUTPUT_DIR, base_csv_path=None):
     """
     Realiza validações na base_unificada.csv e remove profissionais conforme regras:
     - Cargos: diretores, estagiários, aprendizes
@@ -12,10 +12,18 @@ def run_validation(INPUT_DIR, OUTPUT_DIR):
     - Preenche campos faltantes
     - Corrige férias mal preenchidas
     - Aplica corretamente feriados estaduais e municipais
+
+    Agora aceita um caminho opcional `base_csv_path` que, se fornecido, será usado
+    como arquivo base a ser validado (ao invés de procurar em OUTPUT_DIR).
+
+    Retorna um dict: { 'success': bool, 'message': str, 'output_path': str or None }
     """
     try:
         # Carrega a base unificada
-        base_path = os.path.join(OUTPUT_DIR, 'base_unificada.csv')
+        if base_csv_path:
+            base_path = base_csv_path
+        else:
+            base_path = os.path.join(OUTPUT_DIR, 'base_unificada.csv')
         df = pd.read_csv(base_path, sep=';', encoding='utf-8-sig')
         app.logger.info(f"Base carregada: {df.shape[0]} linhas.")
 
@@ -118,7 +126,7 @@ def run_validation(INPUT_DIR, OUTPUT_DIR):
         valid_output = os.path.join(OUTPUT_DIR, 'base_unificada_validada.csv')
         df_validado.to_csv(valid_output, index=False, sep=';', encoding='utf-8-sig')
 
-        return f"Validação concluída. Arquivo salvo em: {valid_output} (Total removidos: {total_removidos})"
+        return { 'success': True, 'message': f"Validação concluída. Arquivo salvo em: {valid_output} (Total removidos: {total_removidos})", 'output_path': valid_output }
     except Exception as e:
         app.logger.error(f"Erro na validação: {e}", exc_info=True)
-        return f"Erro na validação: {e}"
+        return { 'success': False, 'message': f"Erro na validação: {e}", 'output_path': None }
