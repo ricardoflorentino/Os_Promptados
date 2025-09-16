@@ -5,6 +5,7 @@ import logging
 import requests
 import time
 from validation import run_validation
+from converter import convert_latest_result_to_xlsx
 from calculation import calcular_dias_uteis_por_colaborador, aplicar_regra_desligamento, calcular_valor_total_vr, gerar_planilha_final
 from io import BytesIO
 
@@ -189,12 +190,13 @@ def index():
                     )
                     if response.status_code == 200:
                         app.logger.info("Webhook chamado com sucesso.")
-                        target_prefix = 'RESULTADO_VR_MENSAL_'
+                        # Aqui devemos retornar o arquivo XLSX já convertido no diretório de saída
+                        xlsx_prefix = 'VR MENSAL '
                         try:
                             candidatos = [
                                 os.path.join(OUTPUT_DIR, f)
                                 for f in os.listdir(OUTPUT_DIR)
-                                if f.startswith(target_prefix) and f.lower().endswith('.csv')
+                                if f.startswith(xlsx_prefix) and f.lower().endswith('.xlsx')
                             ]
                         except FileNotFoundError:
                             return "Arquivo não encontrado.", 404
@@ -204,7 +206,7 @@ def index():
                             result_path = candidatos[0]
                             return send_file(result_path, as_attachment=True)
                         else:
-                            return "Arquivo RESULTADO_VR_MENSAL_*.csv não encontrado.", 404
+                            return "Arquivo VR MENSAL *.xlsx não encontrado.", 404
                     else:
                         app.logger.error(f"Webhook retornou status {response.status_code}")
                 else:
@@ -212,17 +214,17 @@ def index():
             except Exception as e:
                 app.logger.error(f"Erro ao chamar webhook: {e}")
 
-            # 3) Aguarda a geração do arquivo RESULTADO_VR_MENSAL_*.csv e faz o download
+            # 3) Aguarda a geração do arquivo XLSX (VR MENSAL *.xlsx) e faz o download
             start_time = time.time()
             timeout_s = int(os.environ.get('RESULT_TIMEOUT_SECONDS', '300'))
-            target_prefix = 'RESULTADO_VR_MENSAL_'
+            xlsx_prefix = 'VR MENSAL '
             result_path = None
             while time.time() - start_time < timeout_s:
                 try:
                     candidatos = [
                         os.path.join(OUTPUT_DIR, f)
                         for f in os.listdir(OUTPUT_DIR)
-                        if f.startswith(target_prefix) and f.lower().endswith('.csv')
+                        if f.startswith(xlsx_prefix) and f.lower().endswith('.xlsx')
                     ]
                 except FileNotFoundError:
                     candidatos = []
@@ -241,7 +243,7 @@ def index():
             else:
                 message = (
                     (message + ' | ') if message else ''
-                ) + "Tempo de espera esgotado para geração do RESULTADO_VR_MENSAL. Tente novamente."
+                ) + "Tempo de espera esgotado para geração do arquivo VR MENSAL (XLSX). Tente novamente."
     return render_template('index.html', message=message)
 
 
@@ -264,6 +266,20 @@ def download_file():
         return send_file(result_path, as_attachment=True)
     else:
         return "Arquivo RESULTADO_VR_MENSAL_*.csv não encontrado.", 404
+
+@app.route('/convert', methods=['POST'])
+def convert_to_xlsx():
+    """Converte o arquivo RESULTADO_VR_MENSAL_*.csv mais recente para XLSX e retorna para download."""
+    try:
+        xlsx_path = convert_latest_result_to_xlsx(OUTPUT_DIR, OUTPUT_DIR)
+        if os.path.exists(xlsx_path):
+            return send_file(xlsx_path, as_attachment=True)
+        return {"status": "error", "message": "Falha ao localizar o XLSX gerado."}, 500
+    except FileNotFoundError as e:
+        return {"status": "error", "message": str(e)}, 404
+    except Exception as e:
+        app.logger.error(f"Erro na conversão CSV->XLSX: {e}", exc_info=True)
+        return {"status": "error", "message": str(e)}, 500
 
 @app.route('/validation', methods=['GET','POST'])
 def validation():

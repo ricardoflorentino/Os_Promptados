@@ -423,7 +423,6 @@ def gerar_planilha_final(input_dir, output_csv, competencia=None):
     - Usa o arquivo com valores de VR gerados (prefere base_unificada_calculation_vr.csv)
     - Calcula VALOR DIÁRIO como TOTAL / Dias quando possível; faz fallback para valor por sindicato
     - Custo empresa = 80% do TOTAL; Desconto profissional = 20% do TOTAL
-    - Salva CSV e tenta salvar também XLSX
     """
     import logging
     import math

@@ -51,7 +51,6 @@ Matrícula 25857: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 25872: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 25931: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 25934: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 25961: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 25975: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 25978: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 26042: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -60,7 +59,7 @@ Matrícula 26055: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 26084: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 26095: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 26129: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 26139: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 26139: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 26147: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 26161: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 26174: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -125,7 +124,7 @@ Matrícula 27154: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 27163: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 27198: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 27212: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 27226: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 27226: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 27243: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 27246: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 27257: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -163,7 +162,7 @@ Matrícula 29201: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 29229: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 29254: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 29291: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 29294: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 29294: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 29342: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 29359: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 29384: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -183,7 +182,7 @@ Matrícula 30112: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 30114: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30119: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30123: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 30130: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 30130: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 30134: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30140: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30145: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -193,7 +192,6 @@ Matrícula 30173: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 30175: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30187: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30197: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 30200: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 30205: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30206: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30207: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -201,7 +199,6 @@ Matrícula 30209: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 30239: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30249: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30262: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 30264: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 30265: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30273: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30276: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -235,7 +232,6 @@ Matrícula 30504: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 30505: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30506: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30510: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 30515: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 30530: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30556: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30567: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -248,7 +244,7 @@ Matrícula 30621: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC 
 Matrícula 30623: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30642: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30652: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 30673: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 30673: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 30685: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30707: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30708: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -267,7 +263,7 @@ Matrícula 30856: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 30859: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30861: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 30864: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 30867: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 30867: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 30870: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30875: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 30876: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -278,7 +274,7 @@ Matrícula 31007: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC 
 Matrícula 31009: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31010: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31012: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31019: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31019: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 31022: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31030: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31033: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -313,7 +309,7 @@ Matrícula 31204: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 31208: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31227: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31234: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31237: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 31237: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 31249: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31255: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31256: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -323,10 +319,9 @@ Matrícula 31293: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 31301: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31302: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31313: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31314: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31314: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 31315: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31319: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 31326: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 31327: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31329: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31333: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -335,7 +330,7 @@ Matrícula 31365: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 31372: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31385: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31393: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31394: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31394: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 31403: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31404: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31407: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -351,7 +346,7 @@ Matrícula 31465: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC 
 Matrícula 31474: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31476: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31485: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31486: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31486: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 31488: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31494: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31505: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -393,7 +388,7 @@ Matrícula 31715: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 31730: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31731: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31737: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 31740: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 31740: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 31746: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31754: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31757: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -419,8 +414,8 @@ Matrícula 31848: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 31852: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 31868: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31872: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 31880: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
-Matrícula 31889: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31880: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 31889: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 31890: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31905: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 31927: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -502,7 +497,6 @@ Matrícula 32336: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 32337: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32343: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32344: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 32345: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 32351: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32356: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32369: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -530,7 +524,7 @@ Matrícula 32497: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 32508: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32528: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32532: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 32533: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 32533: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 32535: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32536: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32538: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -539,7 +533,6 @@ Matrícula 32549: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 32552: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32562: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32563: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 32572: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 32577: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32585: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32589: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -548,7 +541,7 @@ Matrícula 32594: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 32614: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32622: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 32625: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 32636: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 32636: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 32639: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 32640: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 32655: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -599,10 +592,9 @@ Matrícula 32920: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 32923: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32926: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32929: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 32930: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 32935: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 32938: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 32946: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 32946: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 32948: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 32957: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 32974: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -633,7 +625,6 @@ Matrícula 33094: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 33095: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33099: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33103: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 33106: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 33107: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33111: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33113: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -705,18 +696,18 @@ Matrícula 33394: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS D
 Matrícula 33395: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33401: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33403: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33404: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33404: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33405: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33409: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33413: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33416: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 33417: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33417: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33418: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33420: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33423: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33424: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33427: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 33428: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33428: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33436: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33442: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33443: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -725,9 +716,9 @@ Matrícula 33451: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 33460: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33466: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33479: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 33482: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33482: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33489: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33492: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33492: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33494: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33499: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33502: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -769,7 +760,7 @@ Matrícula 33611: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 33619: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33620: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33625: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33627: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33627: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33628: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33629: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33633: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -785,7 +776,7 @@ Matrícula 33682: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 33691: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33698: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33708: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33711: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33711: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33712: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33715: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33718: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -823,7 +814,7 @@ Matrícula 33827: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 33828: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33831: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33832: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33835: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33835: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33842: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33845: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33847: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -847,7 +838,7 @@ Matrícula 33904: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 33917: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33918: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33919: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 33922: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33922: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33927: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33928: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33929: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -867,7 +858,7 @@ Matrícula 33974: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 33976: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33983: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 33984: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 33989: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 33989: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 33991: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33995: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 33996: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -927,7 +918,7 @@ Matrícula 34166: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC 
 Matrícula 34167: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34168: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34172: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34179: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34179: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34188: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34190: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34191: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -996,7 +987,6 @@ Matrícula 34343: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 34344: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34351: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34352: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34357: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 34359: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34360: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34361: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1008,13 +998,13 @@ Matrícula 34374: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC 
 Matrícula 34375: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34379: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34385: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34387: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34387: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34399: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34409: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34410: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34414: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34415: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34417: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34417: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34418: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34419: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34422: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1025,7 +1015,7 @@ Matrícula 34434: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 34439: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34442: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34444: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34447: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 34447: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 34448: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34449: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34451: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1041,7 +1031,7 @@ Matrícula 34470: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 34471: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34474: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34476: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34477: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34477: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34481: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34483: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34487: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1059,12 +1049,10 @@ Matrícula 34513: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 34514: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34516: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34524: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34526: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 34529: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34532: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34534: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Desligamento: dias_uteis 21 -> 10 | DIAS_UTEIS final: 10
 Matrícula 34535: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34539: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | Afastamento: -21 (afastado) | DIAS_UTEIS final: 0
 Matrícula 34540: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34542: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34543: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1112,7 +1100,7 @@ Matrícula 34637: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 34638: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34639: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34640: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34641: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34641: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34644: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34645: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34646: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1147,11 +1135,11 @@ Matrícula 34698: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 34699: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34702: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34705: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34706: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34706: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34709: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34716: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34719: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34721: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34721: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34722: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34723: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34725: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1184,7 +1172,7 @@ Matrícula 34780: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 34782: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34783: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34784: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34785: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34785: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34787: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34788: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34789: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1209,7 +1197,7 @@ Matrícula 34813: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 34815: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34817: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34818: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34819: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34819: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34820: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34821: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34823: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1221,7 +1209,7 @@ Matrícula 34833: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 34834: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34837: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34838: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34841: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34841: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34842: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34843: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34844: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1242,7 +1230,7 @@ Matrícula 34871: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS D
 Matrícula 34873: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34874: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34881: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34884: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34884: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34885: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34886: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34887: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1261,14 +1249,14 @@ Matrícula 34916: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 34920: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34921: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34922: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 34924: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34924: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34925: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34926: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34928: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34931: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34933: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 34934: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 34935: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 34935: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 34936: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34939: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 34940: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
@@ -1358,7 +1346,6 @@ Matrícula 35080: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS
 Matrícula 35082: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35083: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35091: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35093: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35094: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35095: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35097: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1396,8 +1383,8 @@ Matrícula 35155: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35156: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35157: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35158: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35161: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
-Matrícula 35162: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35161: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35162: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35164: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35165: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35167: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1463,7 +1450,7 @@ Matrícula 35266: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35267: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35268: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35269: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35270: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35270: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35271: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35272: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35273: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1608,7 +1595,7 @@ Matrícula 35466: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS D
 Matrícula 35468: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35470: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35471: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35474: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35474: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35476: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35477: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35478: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1668,24 +1655,24 @@ Matrícula 35547: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35549: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35552: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35553: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 35554: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35554: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35555: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35557: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35558: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35558: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35559: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35560: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35561: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35562: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35563: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35564: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35564: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35565: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35566: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35568: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35569: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35569: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35570: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35573: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35574: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35575: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35575: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35576: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35577: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35578: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1698,7 +1685,7 @@ Matrícula 35584: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35586: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35587: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35588: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 35589: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35589: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35590: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35592: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35593: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1753,7 +1740,7 @@ Matrícula 35659: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35661: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35662: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35663: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35664: sindicato='NAN' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
+Matrícula 35664: sindicato='NÃO INFORMADO' dias_uteis_base=0 | Desligamento: dias_uteis 0 -> 0 | DIAS_UTEIS final: 0
 Matrícula 35666: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35667: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35668: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1784,7 +1771,7 @@ Matrícula 35695: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35696: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35697: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35698: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 35699: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35699: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35700: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35701: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35702: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1793,24 +1780,21 @@ Matrícula 35704: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35705: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35706: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35707: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35708: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35708: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35709: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35710: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35711: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35712: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35713: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35714: sindicato='SINDPD RJ - SINDICATO PROFISSIONAIS DE PROC DADOS DO RIO DE JANEIRO' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35715: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
-Matrícula 35716: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35717: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35718: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35719: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35720: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35721: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35722: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35723: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35724: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35725: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35725: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35726: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35727: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35728: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1821,12 +1805,12 @@ Matrícula 35732: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35733: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35734: sindicato='SINDPD SP - SIND.TRAB.EM PROC DADOS E EMPR.EMPRESAS PROC DADOS ESTADO DE SP.' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35736: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 35737: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35737: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35738: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35739: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35740: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35741: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
-Matrícula 35742: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35742: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35743: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35744: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35745: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1839,7 +1823,7 @@ Matrícula 35751: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35752: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35753: sindicato='SITEPD PR - SIND DOS TRAB EM EMPR PRIVADAS DE PROC DE DADOS DE CURITIBA E REGIAO METROPOLITANA' dias_uteis_base=22 | DIAS_UTEIS final: 22
 Matrícula 35754: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35755: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35755: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35756: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35757: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35758: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
@@ -1851,7 +1835,7 @@ Matrícula 35763: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS 
 Matrícula 35764: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35765: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35766: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
-Matrícula 35767: sindicato='NAN' dias_uteis_base=0 | DIAS_UTEIS final: 0
+Matrícula 35767: sindicato='NÃO INFORMADO' dias_uteis_base=0 | DIAS_UTEIS final: 0
 Matrícula 35768: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35769: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
 Matrícula 35770: sindicato='SINDPPD RS - SINDICATO DOS TRAB. EM PROC. DE DADOS RIO GRANDE DO SUL' dias_uteis_base=21 | DIAS_UTEIS final: 21
