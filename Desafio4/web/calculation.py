@@ -431,8 +431,26 @@ def gerar_planilha_final(input_dir, output_csv, competencia=None):
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger("calculation-final")
 
+    # Competência precisa ser texto no formato MM/YYYY
     if competencia is None:
-        competencia = datetime.now().strftime("%m.%Y")
+        competencia = datetime.now().strftime("%m/%Y")
+    else:
+        # Normaliza qualquer separador para MM/YYYY
+        try:
+            # aceita 'MM.YYYY' ou 'MM-YYYY' e converte
+            comp = str(competencia).strip()
+            if re.match(r"^\d{2}[./-]\d{4}$", comp):
+                competencia = comp.replace('.', '/').replace('-', '/')
+            elif re.match(r"^\d{4}-\d{2}-\d{2}$", comp):
+                # caso venha uma data completa, converte para MM/YYYY
+                dt = pd.to_datetime(comp, errors='coerce')
+                competencia = dt.strftime('%m/%Y') if pd.notnull(dt) else datetime.now().strftime('%m/%Y')
+            else:
+                # fallback: tenta parsear
+                dt = pd.to_datetime(comp, errors='coerce', dayfirst=True)
+                competencia = dt.strftime('%m/%Y') if pd.notnull(dt) else datetime.now().strftime('%m/%Y')
+        except Exception:
+            competencia = datetime.now().strftime('%m/%Y')
 
     # Carrega base de VR
     base_path = os.path.join(os.path.dirname(output_csv), "base_unificada_calculation_vr.csv")
@@ -459,10 +477,14 @@ def gerar_planilha_final(input_dir, output_csv, competencia=None):
             row.get('Data Admissao'), row.get('Data de Admissao')
         ]
         adm = next((v for v in adm_candidates if v is not None and not pd.isna(v) and str(v).strip() != ''), '')
-        # Formata data de admissão como dd/mm/aaaa quando possível
+        # Formata data de admissão como dd/mm/aaaa quando possível (inclui fallback para serial Excel)
         if adm not in ['', None] and not pd.isna(adm):
             try:
                 adm_dt = pd.to_datetime(adm, errors='coerce', dayfirst=True)
+                if pd.isna(adm_dt):
+                    # tenta serial Excel
+                    adm_num = pd.to_numeric(pd.Series([adm]), errors='coerce').iloc[0]
+                    adm_dt = pd.to_datetime(adm_num, unit='d', origin='1899-12-30', errors='coerce')
                 if pd.notnull(adm_dt):
                     adm = adm_dt.strftime('%d/%m/%Y')
                 else:
@@ -599,18 +621,20 @@ def gerar_planilha_final(input_dir, output_csv, competencia=None):
                 obs_msgs.append('Desligamento comunicado até dia 15')
             else:
                 obs_msgs.append('Desligamento após dia 15 (proporcional)')
-
-        custo_empresa = round(total_f * 0.8, 2)
-        desconto_prof = round(total_f * 0.2, 2)
+        # Garante tipos numéricos com 2 casas decimais
+        valor_diario = float(round(valor_diario, 2))
+        total_f = float(round(total_f, 2))
+        custo_empresa = float(round(total_f * 0.8, 2))
+        desconto_prof = float(round(total_f * 0.2, 2))
 
         out_row = {
             'Matricula': matricula,
             'Admissão': adm,
             'Sindicato do Colaborador': sindicato,
-            'Competência': competencia,
-            'Dias': dias_n,
-            'VALOR DIÁRIO VR': round(valor_diario, 2),
-            'TOTAL': round(total_f, 2),
+            'Competência': str(competencia),
+            'Dias': int(dias_n),
+            'VALOR DIÁRIO VR': valor_diario,
+            'TOTAL': total_f,
             'Custo empresa': custo_empresa,
             'Desconto profissional': desconto_prof,
             'OBS GERAL': ' | '.join(dict.fromkeys([m for m in obs_msgs if m]))
@@ -621,7 +645,8 @@ def gerar_planilha_final(input_dir, output_csv, competencia=None):
     df_out = pd.DataFrame(out_rows, columns=['Matricula', 'Admissão', 'Sindicato do Colaborador', 'Competência', 'Dias', 'VALOR DIÁRIO VR', 'TOTAL', 'Custo empresa', 'Desconto profissional', 'OBS GERAL'])
 
     # Salva CSV
-    out_filename = os.path.join(os.path.dirname(output_csv), f"RESULTADO_VR_MENSAL_{competencia.replace('.', '_')}.csv")
+    # Garante nome seguro substituindo '/' por '_'
+    out_filename = os.path.join(os.path.dirname(output_csv), f"RESULTADO_VR_MENSAL_{str(competencia).replace('/', '_')}.csv")
     df_out.to_csv(out_filename, sep=';', index=False, encoding='utf-8-sig')
     logger.info(f"Planilha final CSV salva em: {out_filename}")
 

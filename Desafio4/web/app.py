@@ -131,9 +131,16 @@ def process_files():
         # Normaliza/formatta a coluna de Admissão para dd/mm/aaaa se existir
         if 'Admissão' in merged_df.columns:
             try:
+                # 1) Tenta parsear como data com dayfirst
                 adm_parsed = pd.to_datetime(merged_df['Admissão'], errors='coerce', dayfirst=True)
+                # 2) Para os que ficaram NaT, tenta como número serial do Excel
+                need_serial = adm_parsed.isna()
+                if need_serial.any():
+                    adm_numeric = pd.to_numeric(merged_df.loc[need_serial, 'Admissão'], errors='coerce')
+                    adm_serial = pd.to_datetime(adm_numeric, unit='d', origin='1899-12-30', errors='coerce')
+                    adm_parsed.loc[need_serial] = adm_serial
+                # 3) Formata e mantém vazio onde não há data
                 merged_df['Admissão'] = adm_parsed.dt.strftime('%d/%m/%Y')
-                # Mantém vazio onde não há data
                 merged_df['Admissão'] = merged_df['Admissão'].where(~adm_parsed.isna(), '')
             except Exception:
                 # Se não for possível formatar, mantém como está

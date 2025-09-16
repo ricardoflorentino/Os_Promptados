@@ -74,20 +74,25 @@ def run_validation(INPUT_DIR, OUTPUT_DIR, base_csv_path=None):
         app.logger.info(f"Base após exclusões: {df_validado.shape[0]} linhas.")
 
         # --- Tratamento de datas inconsistentes ou quebradas ---
-        date_cols = [col for col in df_validado.columns if 'data' in col.lower() or 'admiss' in col.lower()]
+        # Considera colunas que contenham 'data', 'admiss' ou sejam exatamente 'Admissão'
+        date_cols = [col for col in df_validado.columns if ('data' in col.lower()) or ('admiss' in col.lower()) or (col.strip().lower() == 'admissão')]
         for col in date_cols:
-            before = df_validado[col].copy()
-            # Tenta converter usando o formato ISO primeiro, depois tenta com dayfirst=True
-            try:
-                df_validado[col] = pd.to_datetime(df_validado[col], errors='coerce', format='%Y-%m-%d')
-            except Exception:
-                df_validado[col] = pd.to_datetime(df_validado[col], errors='coerce', dayfirst=True)
+            # 1) Tentativa com formato ISO
+            parsed = pd.to_datetime(df_validado[col], errors='coerce', format='%Y-%m-%d')
+            # 2) Para NaT, tenta com dayfirst
+            mask_nat = parsed.isna()
+            if mask_nat.any():
+                parsed2 = pd.to_datetime(df_validado.loc[mask_nat, col], errors='coerce', dayfirst=True)
+                parsed.loc[mask_nat] = parsed2
+            # 3) Para ainda NaT, tenta números seriais do Excel
+            mask_nat2 = parsed.isna()
+            if mask_nat2.any():
+                nums = pd.to_numeric(df_validado.loc[mask_nat2, col], errors='coerce')
+                parsed3 = pd.to_datetime(nums, unit='d', origin='1899-12-30', errors='coerce')
+                parsed.loc[mask_nat2] = parsed3
+            df_validado[col] = parsed
             n_invalid = df_validado[col].isna().sum()
-            app.logger.info(f"Coluna {col}: {n_invalid} datas inválidas convertidas para NaT.")
-            # Log exemplos de datas quebradas
-            broken = before[before.apply(lambda x: not pd.to_datetime(x, errors='coerce', dayfirst=True, exact=False))]
-            if not broken.empty:
-                app.logger.debug(f"Exemplos de datas quebradas em {col}: {broken.head(5).tolist()}")
+            app.logger.info(f"Coluna {col}: {n_invalid} datas inválidas convertidas para NaT após tentativas múltiplas.")
 
         # --- Preenchimento de campos faltantes ---
         missing_cols = df_validado.columns[df_validado.isnull().any()].tolist()
@@ -121,6 +126,21 @@ def run_validation(INPUT_DIR, OUTPUT_DIR, base_csv_path=None):
                 app.logger.info("Feriados estaduais e municipais aplicados via merge com base de dias úteis.")
             else:
                 app.logger.warning("Colunas 'UF' e/ou 'Município' não encontradas para aplicar feriados.")
+
+        # Antes de salvar, formata 'Admissão' como dd/mm/aaaa, se existir
+        if 'Admissão' in df_validado.columns:
+            try:
+                adm = pd.to_datetime(df_validado['Admissão'], errors='coerce', dayfirst=True)
+                # tenta serial para os que restarem NaT
+                mask_nat = adm.isna()
+                if mask_nat.any():
+                    nums = pd.to_numeric(df_validado.loc[mask_nat, 'Admissão'], errors='coerce')
+                    adm_serial = pd.to_datetime(nums, unit='d', origin='1899-12-30', errors='coerce')
+                    adm.loc[mask_nat] = adm_serial
+                df_validado['Admissão'] = adm.dt.strftime('%d/%m/%Y')
+                df_validado['Admissão'] = df_validado['Admissão'].where(~adm.isna(), '')
+            except Exception:
+                pass
 
         # Salva resultado validado
         valid_output = os.path.join(OUTPUT_DIR, 'base_unificada_validada.csv')
