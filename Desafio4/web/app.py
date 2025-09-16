@@ -20,9 +20,38 @@ INPUT_DIR = os.path.join(BASE_DIR, 'files')
 OUTPUT_DIR = os.path.join(BASE_DIR, 'output')
 OUTPUT_FILENAME = os.path.join(OUTPUT_DIR, 'base_unificada.csv')
 OUTPUT_VALID_FILENAME = os.path.join(OUTPUT_DIR, 'base_unificada_validada.csv')
+COMPETENCIA_FILE = os.path.join(OUTPUT_DIR, 'competencia.txt')
 
 # Ensure the output directory exists
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+def _normalize_competencia(raw: str) -> str:
+    """Normaliza entradas como '2025-09', '2025/09', '09/2025' para 'MM/YYYY'."""
+    import re
+    from datetime import datetime
+    if not raw:
+        return datetime.now().strftime('%m/%Y')
+    s = str(raw).strip()
+    try:
+        # aceita YYYY-MM ou YYYY/MM
+        if re.match(r"^\d{4}[-/]\d{2}$", s):
+            yyyy, mm = re.split(r"[-/]", s)
+            return f"{int(mm):02d}/{int(yyyy):04d}"
+        # aceita MM/YYYY ou MM-YYYY
+        if re.match(r"^\d{2}[-/]\d{4}$", s):
+            mm, yyyy = re.split(r"[-/]", s)
+            return f"{int(mm):02d}/{int(yyyy):04d}"
+        # aceita data completa
+        try:
+            dt = pd.to_datetime(s, errors='coerce', dayfirst=True)
+            if pd.notnull(dt):
+                return dt.strftime('%m/%Y')
+        except Exception:
+            pass
+    except Exception:
+        pass
+    return datetime.now().strftime('%m/%Y')
+
 
 def process_files():
     """
@@ -163,6 +192,15 @@ def index():
     """Renders the main page and handles file processing on POST."""
     message = None
     if request.method == 'POST':
+        # 0) Lê e persiste a competência informada pelo usuário
+        raw_comp = request.form.get('competencia')  # ex.: '2025-09' do input type=month
+        competencia = _normalize_competencia(raw_comp)
+        try:
+            with open(COMPETENCIA_FILE, 'w', encoding='utf-8') as cf:
+                cf.write(competencia)
+            app.logger.info(f"Competência recebida: {competencia} (raw='{raw_comp}')")
+        except Exception as e:
+            app.logger.error(f"Falha ao salvar competência: {e}")
         expected_filenames = [
             'ATIVOS.xlsx',
             'FÉRIAS.xlsx',
@@ -347,7 +385,16 @@ def calculation():
         calcular_dias_uteis_por_colaborador(INPUT_DIR, output_csv)
         aplicar_regra_desligamento(INPUT_DIR, output_csv)
         calcular_valor_total_vr(INPUT_DIR, output_csv)
-        final_path = gerar_planilha_final(INPUT_DIR, output_csv)
+        # Tenta carregar competência previamente salva no upload
+        competencia = None
+        try:
+            if os.path.exists(COMPETENCIA_FILE):
+                with open(COMPETENCIA_FILE, 'r', encoding='utf-8') as cf:
+                    competencia = cf.read().strip()
+        except Exception as e:
+            app.logger.warning(f"Não foi possível ler competência salva: {e}")
+
+        final_path = gerar_planilha_final(INPUT_DIR, output_csv, competencia=competencia)
 
         if final_path and os.path.exists(final_path):
             app.logger.info(f"Processamento concluído. Arquivo final gerado em: {final_path}")

@@ -102,10 +102,18 @@
         <div class="container">
             <div class="card">
                 <form id="uploadForm" method="post" enctype="multipart/form-data">
+                    <div class="card" style="margin-bottom:12px">
+                        <label for="competencia" style="display:block;font-weight:700;color:#0b1220;margin-bottom:6px">1) Competência (Mês/Ano)</label>
+                        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+                            <input id="competencia" name="competencia" type="month" required aria-describedby="competenciaHelp" style="padding:10px 12px;border-radius:10px;border:1px solid rgba(15,23,42,0.08)" />
+                            <small id="competenciaHelp" class="meta">Informe o mês e ano de referência antes do envio.</small>
+                        </div>
+                    </div>
+
                     <label id="dropZone" for="fileInput" class="dropzone" tabindex="0" aria-label="Área para arrastar e soltar arquivos">
                         <div class="drop-icon">📁</div>
                         <div>
-                            <div class="drop-text">Arraste e solte os arquivos aqui</div>
+                            <div class="drop-text">2) Arraste e solte os arquivos aqui</div>
                             <div class="drop-sub">ou clique para selecionar (.xlsx, .xls, .csv)</div>
                         </div>
                         <input id="fileInput" type="file" name="planilhas[]" multiple required aria-describedby="fileListDesc">
@@ -155,6 +163,7 @@
         (function() {
             const form = document.getElementById('uploadForm');
             const fileInput = document.getElementById('fileInput');
+            const competenciaInput = document.getElementById('competencia');
             const submitBtn = document.getElementById('submitBtn');
             const loading = document.getElementById('loading');
             const success = document.getElementById('success');
@@ -214,6 +223,11 @@
 
             async function handleSubmit(e) {
                 e.preventDefault();
+                if (!competenciaInput || !competenciaInput.value) {
+                    errorBox.textContent = 'Informe a Competência (mês/ano).';
+                    errorBox.style.display = 'block';
+                    return;
+                }
                 if (!fileInput || !fileInput.files || fileInput.files.length === 0) return;
 
                 // UI: show loading, hide inputs

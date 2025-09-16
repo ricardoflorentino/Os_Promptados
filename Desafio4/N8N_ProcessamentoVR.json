@@ -1,5 +1,5 @@
 {
-  "name": "ProcessamentoVR",
+  "name": "Processamento VR",
   "nodes": [
     {
       "parameters": {
@@ -22,7 +22,7 @@
     {
       "parameters": {
         "promptType": "define",
-        "text": "=Ações:\n\nValidação: Chame a ferramenta Validation para verificar a integridade e conformidade dos dados.\n\nCálculo: Após a validação, chame a ferramenta Calculation para processar e calcular os valores.\n\nSaída: O arquivo será atualizado internamente com os resultados do processamento.\"",
+        "text": "=Ações:\n\nValidação: Chame a ferramenta Validation para verificar a integridade e conformidade dos dados.\n\nCálculo: Após a validação, chame a ferramenta Calculation para processar e calcular os valores.\n\nConverção: Converte a planilha para XLSX após o calculo.\n\nSaída: O arquivo será atualizado internamente com os resultados do processamento.\"",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
@@ -46,8 +46,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.2,
       "position": [
-        128,
-        224
+        176,
+        272
       ],
       "id": "a648fa36-f18f-4599-9c45-129bd83445a9",
       "name": "OpenAI Chat Model",
@@ -67,7 +67,7 @@
       "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.2,
       "position": [
-        528,
+        352,
         256
       ],
       "id": "9cdd3511-d784-4f1f-9a6e-7191cff9e83b",
@@ -82,7 +82,7 @@
       "type": "n8n-nodes-base.httpRequestTool",
       "typeVersion": 4.2,
       "position": [
-        704,
+        512,
         256
       ],
       "id": "a5e83aae-4e30-4c0f-8663-515b2aef2332",
@@ -101,6 +101,22 @@
       ],
       "id": "4cccbcd8-69bd-4e62-92df-d2389d95f646",
       "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Convert CSV to XLSX",
+        "method": "POST",
+        "url": "http://127.0.0.1:5000/convert",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
+      "position": [
+        688,
+        256
+      ],
+      "id": "b10b33ce-cf1c-4318-af69-e5873408363a",
+      "name": "Convert to XLSX"
     }
   ],
   "pinData": {
@@ -180,13 +196,24 @@
           }
         ]
       ]
+    },
+    "Convert to XLSX": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "active": true,
   "settings": {
     "executionOrder": "v1"
   },
-  "versionId": "f9e45ce1-6cc2-4852-bd3a-20fa510b5016",
+  "versionId": "b8674843-6c81-4038-8820-00d897238db9",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "682ba4bcb76e9357cd803a6619f90d47547ebed9676b9deeaca93102598b5b2a"
